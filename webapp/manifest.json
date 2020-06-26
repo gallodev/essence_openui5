@@ -1,0 +1,28 @@
+{
+	"_version": "1.0",
+	"sap.app": {
+		"id": "Essenceit",
+		"type": "application"
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "Essenceit.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.75.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.ui.unified": {}
+			}
+		}						
+	},
+	"users": {
+		"type": "sap.ui.model.json.JSONModel",
+		"uri": "model.users.json"
+	}
+}

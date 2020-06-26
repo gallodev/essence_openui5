@@ -1,0 +1,15 @@
+{	
+	"users": [
+		{
+			"key" : 1,
+			"name": "Christian",
+			"lastName": "Gallo"
+		},
+		{
+			"key" : 2,
+			"name": "Marcio",
+			"lastName": "Gallo"
+		}		
+	],	
+	"itemsRemovable": true	
+}

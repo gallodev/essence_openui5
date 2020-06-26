@@ -1,0 +1,24 @@
+<mvc:View
+	controllerName="Essenceit.controller.App"
+	displayBlock="true"
+	xmlns="sap.m"		
+	xmlns:mvc="sap.ui.core.mvc">
+	<Shell>
+		<App>
+			<Page title="EssenceIT App - CRUD">			
+				<content>								
+					<Panel headerText="EssenceIT - Usuários"
+						class="sapUiResponsiveMargin"
+						width="auto">					
+							<Button
+							text="Cadastrar"
+							press=".onRegister"
+							type="Emphasized"
+							class="sapUiSmallMargin"/>											
+							<mvc:XMLView viewName="Essenceit.view.UserList"/>													
+					</Panel>
+				</content>
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,28 @@
+<mvc:View
+   controllerName="Essenceit.controller.App"
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core"
+   xmlns:mvc="sap.ui.core.mvc">
+    <List
+        id="userList"
+        headerText="Usuários"
+        class="sapUiResponsiveMargin"
+        width="auto"
+        mode="Delete"
+        growing="true"
+        growingScrollToLoad="true"        
+        items="{
+                path: '/users',
+                sorter: { path: 'name' }                
+            }" >
+        <headerToolbar>
+            <Toolbar>
+                <Title text="Lista de usuários" />
+                <ToolbarSpacer/>
+                <SearchField width="50%" placeholder="Procurar pelo nome" search=".onFilter"/>
+            </Toolbar>
+        </headerToolbar>
+        <StandardListItem title="{name} {lastName}"/>            
+                 	    
+    </List>																			
+</mvc:View>
