@@ -1,9 +1,3 @@
-# Install
-
- * Clone project 
- * run **npm install**
-
-
 # What is it?
 
 This folder contains restricted utility functions only to be used by framework libraries.
