@@ -10,8 +10,8 @@
         width="auto"        
         growing="true"
         growingScrollToLoad="true"        
-        mode="Delete"                  
-        itemPress=".onUpdateItem"      
+        mode="Delete"          
+        delete=".onDelete"                                        
         items="{
                 path: '/users',
                 sorter: { path: 'name' }                
@@ -23,7 +23,7 @@
                 <SearchField width="50%" placeholder="Procurar pelo nome" search=".onFilter"/>
             </Toolbar>
         </headerToolbar>
-        <CustomListItem>
+        <CustomListItem>        
             <HBox>
                 <core:Icon size="2rem" src="sap-icon://customer" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
                 <VBox  class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >                    
