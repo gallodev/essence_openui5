@@ -4,7 +4,7 @@ CRUD with openui5 framework use
 
 # Install
 
- * Clone project 
+ * Clone project : (https://github.com/gallodev/essence_openui5.git)
  * run **npm install**
 
 # Request Tasks

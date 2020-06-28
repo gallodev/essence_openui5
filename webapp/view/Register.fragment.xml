@@ -1,0 +1,45 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:m="sap.m" 
+   xmlns:f="sap.ui.layout.form"    
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="registerDialog"
+      title="Registrar novo usuário">    
+     <content>
+        <f:SimpleForm>
+        <m:FlexBox       
+            direction="Column"     
+            alignItems="Center"
+            justifyContent="Center">
+
+            <Input
+               value=""      
+               id="inputName"      
+               placeholder="Digite o nome"
+               valueLiveUpdate="true"
+               width="100%"/>
+
+            <Input
+               value=""
+               id="inputLastName"
+               placeholder="Digite o sobrenome"
+               valueLiveUpdate="true"
+               width="100%"/>
+
+        </m:FlexBox>
+        </f:SimpleForm>    
+     </content>
+      
+      <beginButton>        
+         <Button
+            text="Cadastrar"
+            press=".onRegisterSubmit"/>         
+      </beginButton>
+      <endButton>
+         <Button
+            text="Fechar"
+            press=".onCloseRegisterDialog"/>
+      </endButton>
+   </Dialog>
+</core:FragmentDefinition>

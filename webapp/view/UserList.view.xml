@@ -4,13 +4,14 @@
    xmlns:core="sap.ui.core"
    xmlns:mvc="sap.ui.core.mvc">
     <List
-        id="userList"
+        id="userList"        
         headerText="Usuários"
         class="sapUiResponsiveMargin"
-        width="auto"
-        mode="Delete"
+        width="auto"        
         growing="true"
         growingScrollToLoad="true"        
+        mode="Delete"                  
+        itemPress=".onUpdateItem"      
         items="{
                 path: '/users',
                 sorter: { path: 'name' }                
@@ -22,7 +23,13 @@
                 <SearchField width="50%" placeholder="Procurar pelo nome" search=".onFilter"/>
             </Toolbar>
         </headerToolbar>
-        <StandardListItem title="{name} {lastName}"/>            
-                 	    
+        <CustomListItem>
+            <HBox>
+                <core:Icon size="2rem" src="sap-icon://customer" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
+                <VBox  class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >                    
+                    <Text text="{name} {lastName}"/>
+                </VBox>                
+            </HBox>     
+        </CustomListItem>   
     </List>																			
 </mvc:View>

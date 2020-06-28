@@ -19,6 +19,13 @@
 				"sap.f": {},
 				"sap.ui.unified": {}
 			}
+		},
+		"resources": {
+			"css": [
+				{
+				"uri": "css/style.css"
+				}
+	  		]
 		}						
 	},
 	"users": {

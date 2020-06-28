@@ -1,0 +1,30 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:m="sap.m" 
+   xmlns:f="sap.ui.layout.form" 
+   xmlns:l="sap.ui.layout"
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="updateDialog"
+      title="Atualizar usuário">      
+     <l:content>
+        <f:SimpleForm>
+        <m:FlexBox
+            alignItems="Center"
+            justifyContent="Center">
+        </m:FlexBox>
+        </f:SimpleForm>    
+     </l:content>
+      
+      <beginButton>        
+         <Button
+            text="Atualizar Usuário"
+            press=".onCloseDialog"/>         
+      </beginButton>
+      <endButton>
+         <Button
+            text="Fechar"
+            press=".onCloseUpdateDialog"/>
+      </endButton>
+   </Dialog>
+</core:FragmentDefinition>
